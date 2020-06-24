@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message SearchResult {
+  repeated TileEntity result = 1;
+}
+
+message TileEntity {
+  Coordinate coord = 1;
+  int32 dimension_id = 2;
+  string tile_entity_id = 3;
+}
+
+message Coordinate {
+  int32 x = 1;
+  int32 y = 2;
+  int32 z = 3;
+}
