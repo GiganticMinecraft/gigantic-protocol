@@ -7,7 +7,6 @@ message SearchResult {
 message TileEntity {
   Coordinate coord = 1;
   int32 dimension_id = 2;
-  string tile_entity_id = 3;
 }
 
 message Coordinate {
